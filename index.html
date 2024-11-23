@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Arsalan">
+    <meta name="description" content="This is a basic calculator built with HTML and JS">
+
+    <title>The Calculator</title>
+
+    <link rel="icon" href="faviconCalculator.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>The Calculator App</h1>
+    </header>
+    <main>
+        <section class=container>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="4"><input type="text" id="result" class="screen"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="button" value="+" onclick="display('+')" class="operator"></td>
+                        <td><input type="button" value="-" onclick="display('-')" class="operator"></td>
+                        <td><input type="button" value="*" onclick="display('x')" class="operator"></td>
+                        <td><input type="button" value="/" onclick="display('÷')" class="operator"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="7" onclick="display('7')" class="number"></td>
+                        <td><input type="button" value="8" onclick="display('8')" class="number"></td>
+                        <td><input type="button" value="9" onclick="display('9')" class="number"></td>
+                        <td rowspan="4" id="equalstd"><input type="button" value='=' onclick="solve()"
+                                class="equal"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="4" onclick="display('4')" class="number"></td>
+                        <td><input type="button" value="5" onclick="display('5')" class="number"></td>
+                        <td><input type="button" value="6" onclick="display('6')" class="number"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="3" onclick="display('3')" class="number"></td>
+                        <td><input type="button" value="2" onclick="display('2')" class="number"></td>
+                        <td><input type="button" value="1" onclick="display('1')" class="number"></td>
+                    </tr>
+                    <tr>
+                        <td id="zerobtn"><input id="zero" type="button" value="0" onclick="display('0')" class="number"></td>
+                        <td><input type="button" value="." onclick="display('.')" class="decimal"></td>
+                        <td><input type="button" value="AC" onclick="clearScreen()" class="clear"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <script src='app.js' ></script>
+    </main>
+</body>
+
+</html>

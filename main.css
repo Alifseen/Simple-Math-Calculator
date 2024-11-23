@@ -1,0 +1,108 @@
+/* Element CSS */
+
+body{
+    background-color: rgb(11, 39, 82);
+}
+
+header{
+ color: ivory;
+ font-size: larger;
+ align-content: center;
+ text-align: center;
+ font-family: Helvetica;
+}
+
+
+.container{
+    border: solid 1px ivory;
+    padding: 10px;
+    background-color: rgb(11, 39, 82);
+    border-radius: 15px;
+    width: 50%;
+    align-self: center;
+    display: block;
+    margin: auto;
+    box-shadow: 0px 0px 20px 1px ivory;
+}
+
+table {
+    border: solid rgb(134, 125, 125);
+    border-radius: 30px;
+    align-self: center;
+    margin: 15px auto;
+    box-shadow: 0px 0px 0px 2px ivory;
+}
+
+
+.screen {
+    padding: 30px;
+    width: 270px;
+    background-color: rgb(0, 0, 0);
+    color: whitesmoke;
+    font-size: xx-large;
+    font-weight: bold;
+    cursor: default;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+
+td{
+    color: rgb(0, 0, 0);
+    background-color:ivory;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    margin: auto;
+}
+
+input {
+    padding: 20px;
+    width: 80px;
+    border: transparent;
+    color: rgb(0, 0, 0);
+    background-color: ivory;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    cursor: pointer;
+    margin: auto;
+}
+
+.equal{
+    color: rgb(0, 0, 0);
+    background-color: rgb(247, 111, 0);
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    height: 280px;
+    border-bottom-right-radius: 30px;
+}
+
+#equalstd{
+    background-color: rgb(247, 111, 0);
+    border-bottom-right-radius: 30px;
+}
+
+#zerobtn, #zero{
+    border-bottom-left-radius: 30px;
+}
+
+
+/*Interactive CSS*/
+
+#equalstd:hover{
+    background-color: rgb(11, 39, 82);
+    color: ivory;
+    box-shadow: inset 0px 0px 0px 3px;
+}
+
+td:hover input{
+    background-color: rgb(11, 39, 82);
+    color: ivory;
+}
+
+td:active input, #equalstd:active{
+    background-color: rgb(247, 111, 0);
+    color: black;
+}
